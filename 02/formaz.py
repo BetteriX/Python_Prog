@@ -18,8 +18,11 @@ def hello(name, color, what):
     #print(f"{name}, {color} az {what}!")
 
 def main():
-    hello("geza", "kek", "eg")
-    print("-" * 40)
+    #hello("geza", "kek", "eg")
+    #print("-" * 40)
+
+    s = "geza"
+    print(s[-2:])
 
 if __name__ == "__main__":
     main()
