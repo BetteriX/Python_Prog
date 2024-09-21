@@ -69,9 +69,8 @@ def fix_start(s):
     
     result = first_character + s[1:].replace(first_character,"*") 
 
-
-# D. mix_up
     return result
+# D. mix_up
 # Adott két bemeneti sztring, a és b. Adjunk vissza egyetlen sztringet,
 # melyben a és b konkatenálva van úgy, hogy köztük egyetlen szóköz szerepel.
 # Ezen túl cseréljük fel a két sztring első két karakterét az eredményben.
