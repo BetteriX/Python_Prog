@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def szam_megfordit(number):
-    return number[::-1]
+    return int(str(number[::-1]))
 
 def main():
     szam = input("Adjon meg egy egész számot: ")
