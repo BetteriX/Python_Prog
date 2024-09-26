@@ -12,9 +12,22 @@ H4 7375Z377, 05ZD M3G M450KK4L 15!
 """
 
 
+def szoveg_fordit(text, dictionary):
+    result = ""
+
+    for char in text:
+        result += dictionary.get(char, char)
+
+    return result
+
+
 def main():
     # key:value
-    dictionary = {"1": "I", "3": "E", "4": "A", "5": "S", "7": "T"}
+    dictionary = {"0": "O", "1": "I", "3": "E", "4": "A", "5": "S", "7": "T"}
+
+    readable_text = szoveg_fordit(TEXT, dictionary)
+
+    print(readable_text)
 
 
 if __name__ == "__main__":
