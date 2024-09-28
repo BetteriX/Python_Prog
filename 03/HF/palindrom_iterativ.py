@@ -6,15 +6,15 @@ def palindrom_e(szo):
     min = 0
     while min <= max:
         if szo[max] != szo[min]:
-            return True
+            return False
         max -= 1
         min += 1
 
-    return False
+    return True
 
 
 def main():
-    egy_szo = "görögg"
+    egy_szo = "görög"
 
     print(palindrom_e(egy_szo))
 
