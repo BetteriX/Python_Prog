@@ -18,10 +18,11 @@ def decode(TEXT):
 
     for char in TEXT:
         # 64 alatt csak simán hozzáadjuk
-        if ord(char) > 64:
+        betu = ord(char)
+        if betu > 64:
             # ord(char) - egy char- nak visszadja a decimális értékét
             # Majd hozzáad kettőt
-            decimal = ord(char) + 2
+            decimal = betu + 2
 
             # Ha túl csordul akkor visszafordul (pl.: { (123) -> a (97))
             # Kisbetük
