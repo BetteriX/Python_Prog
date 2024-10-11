@@ -39,6 +39,41 @@ def main():
 
     result = [len(sz) for sz in s.split()]
 
+    # 8.
+    s = "python is an awesome language"
+
+    result = [sz[0] for sz in s.split()]
+
+    # 9.
+    s = "The quick brown fox jumps over the lazy dog"
+
+    result = [(sz, len(sz)) for sz in s.split()]
+
+    # 10.
+    result = [i for i in range(0, 10, 2)]
+
+    # 11.
+    result = [i * i for i in range(0, 20, 2)]
+
+    # 12.
+    result = [i * i for i in range(20) if str(i * i).endswith("4")]
+
+    # 13.
+    s = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+
+    result = "".join(s)
+
+    # 14.
+    s = [" apple ", " banana ", " kiwi "]
+
+    result = [word.replace(" ", "") for word in s]
+
+    # 15.
+    l = [1, 0, 1, 1, 0, 1, 0, 0]
+
+    result = "".join(str(num) for num in l)
+    print(result)
+
 
 if __name__ == "__main__":
     main()
