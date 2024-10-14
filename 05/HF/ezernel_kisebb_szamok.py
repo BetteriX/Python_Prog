@@ -2,9 +2,7 @@
 
 
 def main():
-    osszeg = [i for i in range(0, 1000) if i % 3 == 0 or i % 5 == 0]
-
-    osszeg = sum(osszeg)
+    osszeg = sum([i for i in range(0, 1000) if i % 3 == 0 or i % 5 == 0])
 
     print(osszeg)
 
