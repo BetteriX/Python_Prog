@@ -69,9 +69,9 @@ def main():
     result = [word.replace(" ", "") for word in s]
 
     # 15.
-    l = [1, 0, 1, 1, 0, 1, 0, 0]
+    list = [1, 0, 1, 1, 0, 1, 0, 0]
 
-    result = "".join(str(num) for num in l)
+    result = "".join(str(num) for num in list)
     print(result)
 
 
