@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import buillshit
+import bullshit
 
 
 def main():
-    print(buillshit.get_buillshit())
+    print(bullshit.get_buillshit())
 
 
 if __name__ == "__main__":
