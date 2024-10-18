@@ -2,10 +2,15 @@
 
 
 def sorrend_ellenoriz(szoveg):
-    """
-    all() - Hogyha benne van a 4 betü akkor visszaad egy True értéket, hogyha nem akkor False
-    """
-    return all(letter in szoveg for letter in ["j", "s", "u", "n"])
+    szavak = ["j", "s", "u", "n"]
+    i = 0
+    for c in szoveg:
+        if c == szavak[i]:
+            i += 1
+
+    if i == 4:
+        return True
+    return False
 
 
 def main():
@@ -21,7 +26,7 @@ def main():
 
     f.close()
 
-    # print(szavak)
+    print(szavak)
 
 
 if __name__ == "__main__":
