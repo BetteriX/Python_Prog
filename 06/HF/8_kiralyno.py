@@ -32,7 +32,7 @@ def sakk_tabla_kirajzol(li: list):
 
 
 def main():
-    sakk_tabla_kirajzol([7, 3, 0, 2, 5, 1, 6, 4])
+    sakk_tabla_kirajzol([0, 4, 7, 5, 2, 6, 1, 3])
 
 
 if __name__ == "__main__":
