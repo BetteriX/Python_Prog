@@ -68,7 +68,7 @@ the threshold. "You can tell me when I've worked through that," says he,
 looking as fierce as a commander."""
 
 
-def format_word(word):
+def format_word(word: dict):
     remove = [",", ".", '"', "-", ";", ":", "_", "-"]
 
     result = ""

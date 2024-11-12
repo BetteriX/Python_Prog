@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def sor_kirajzol(num):
+def sor_kirajzol(num: int):
     result = "|"
 
     for i in range(0, 8):
