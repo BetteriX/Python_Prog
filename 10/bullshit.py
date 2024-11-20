@@ -1,7 +1,7 @@
 import random
 
 
-def get_buillshit():
+def get_bullshit():
     string_arr1 = [
         "Erõforrás-alapú megközelítéssel kell",
         "Egy absztrakciós létra mentén kell",
