@@ -55,6 +55,10 @@ class MyQueue:
 
 
 def main():
+    s = MyQueue()
+    s.append(2)
+    s.append(3)
+    s.popleft()
     pass
 
 
