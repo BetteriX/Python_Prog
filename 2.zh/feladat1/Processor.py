@@ -1,5 +1,5 @@
 class Processor:
-    def __init__(self, spec):
+    def __init__(self, spec: str):
         freq, cores = spec.split()
         self.freq = freq
         self.cores = cores
@@ -14,7 +14,7 @@ class Processor:
 
         return False
 
-    def compare(self, cpu):
+    def compare(self, cpu: "Processor") -> int:
         if self.get_performance_score() > cpu.get_performance_score():
             return 1
         elif self.get_performance_score() < cpu.get_performance_score():

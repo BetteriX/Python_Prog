@@ -8,7 +8,7 @@ def main():
     # p1 = Processor("2.8", "8")
     # p2 = Processor("4.0", "6")
 
-    # print(p0)
+    print(p0)
 
 
 if __name__ == "__main__":
