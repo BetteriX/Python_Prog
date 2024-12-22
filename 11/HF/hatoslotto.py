@@ -18,12 +18,14 @@ def szorzat(t: list[int]) -> int:
 def find_numbers() -> list[int]:
     target_osszeg = 90
     target_szorzat = 996300
-    szamok = range(1, 46)
+    # szamok = range(1, 46)
+    szamok = [x for x in range(1, 46) if target_szorzat % x == 0]
 
+    cnt = 0
     for a in szamok:
         for b in szamok:
             # Azért hogy elkerüljük a duplikációkat azért tovább léptetjük az adott számot
-            # Mert hogyha a b=1 és a=2 akkor azt addig lépteti tovább még nem lesz b=3
+            # Mert hogyha a b=1 és a=2 akkor azt addig lépteti tovább még nem lesz b=3 vagy nagyobb
             if b <= a:
                 continue
             for c in szamok:
@@ -38,11 +40,13 @@ def find_numbers() -> list[int]:
                         for f in szamok:
                             if f <= e:
                                 continue
+                            cnt += 1
                             talalt_szamok = [a, b, c, d, e, f]
                             if (
                                 osszeg(talalt_szamok) == target_osszeg
                                 and szorzat(talalt_szamok) == target_szorzat
                             ):
+                                print("# counter: {0:,}".format(cnt))
                                 return talalt_szamok
 
     return []
